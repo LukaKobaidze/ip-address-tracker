@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import { informationType } from 'shared/interfaces/data.interface';
 import Heading from './Heading';
-import Information from './Information';
 import IPAddressInput from './IPAddressInput';
+import Information from './Information';
 import 'styles/Header/Header.scss';
 
 type Props = {

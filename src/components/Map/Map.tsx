@@ -1,10 +1,10 @@
 import L from 'leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import markerIcon from 'assets/images/icon-location.svg';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
-import 'styles/Map/Map.scss';
 import { coordinatesType } from 'shared/interfaces/data.interface';
 import ChangeView from './ChangeView';
+import 'styles/Map/Map.scss';
 
 const markerIconL = L.icon({
   iconUrl: markerIcon,
