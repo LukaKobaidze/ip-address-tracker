@@ -40,7 +40,7 @@ Users should be able to:
 - React
 - TypeScript
 - SCSS
-- IP Geolocation API by IPify
+- IP Geolocation API by ipify
 - React Leaflet
 
 ### What I learned
