@@ -1,10 +1,10 @@
 .heading {
-  font-weight: var(--font-weight-medium);
-  text-align: center;
-  color: #fff;
   padding: 0 15px;
   margin-top: 25px;
   margin-bottom: 15px;
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  color: #fff;
 
   @media (max-width: 540px) {
     font-size: 28px;

@@ -1,15 +1,15 @@
 .ip-address-input {
   --border-radius: 15px;
   display: flex;
-  border-radius: 15px;
-  width: 38%;
   max-width: 550px;
+  width: 38%;
   min-width: 465px;
+  border-radius: 15px;
 
   @media (max-width: 540px) {
+    --border-radius: 13px;
     width: 90%;
     min-width: initial;
-    --border-radius: 13px;
   }
 
   &__input {
@@ -27,9 +27,11 @@
       font-size: 14px;
       padding: 15px 20px;
     }
+
     @media (max-width: 370px) {
       font-size: 12px;
     }
+
     @media (max-width: 325px) {
       font-size: 11px;
     }
@@ -42,10 +44,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    background-color: hsl(0, 0, 0);
     width: 70px;
+    border: none;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background-color: hsl(0, 0, 0);
     cursor: pointer;
 
     @media (max-width: 425px) {
