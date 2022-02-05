@@ -1,0 +1,82 @@
+$background-color: #ff0038;
+
+#message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.message-slide {
+  --offset: 20px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 30px;
+  right: var(--offset);
+  max-width: 300px;
+  border-radius: 100vw;
+  transform: translateX(calc(100% + var(--offset)));
+  background-color: $background-color;
+  padding: 10px 10px;
+
+  @media (max-width: 750px) {
+    --offset: 10px;
+    font-size: 15px;
+    top: 20px;
+  }
+
+  &--hide {
+    animation: slideOut 0.75s;
+    animation-fill-mode: forwards;
+  }
+
+  &--show {
+    animation: slideIn 0.75s;
+    animation-fill-mode: forwards;
+  }
+
+  &__icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    & > svg {
+      width: 17px;
+      height: 17px;
+
+      & > path {
+        fill: $background-color;
+      }
+    }
+  }
+  &__text {
+    margin: 0 10px;
+    color: #fff;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(calc(100% + var(--offset)));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + var(--offset)));
+  }
+}

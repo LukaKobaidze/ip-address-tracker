@@ -1,0 +1,59 @@
+.ip-address-input {
+  --border-radius: 15px;
+  display: flex;
+  border-radius: 15px;
+  width: 38%;
+  max-width: 550px;
+  min-width: 465px;
+
+  @media (max-width: 540px) {
+    width: 90%;
+    min-width: initial;
+    --border-radius: 13px;
+  }
+
+  &__input {
+    flex-basis: 100%;
+    padding: 17px 20px;
+    border: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-size: var(--font-size-input);
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 14px;
+      padding: 15px 20px;
+    }
+    @media (max-width: 370px) {
+      font-size: 12px;
+    }
+    @media (max-width: 325px) {
+      font-size: 11px;
+    }
+
+    &::placeholder {
+      color: var(--clr-dark-gray);
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: hsl(0, 0, 0);
+    width: 70px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    cursor: pointer;
+
+    @media (max-width: 425px) {
+      width: 60px;
+    }
+
+    &:hover {
+      background-color: var(--clr-very-dark-gray);
+    }
+  }
+}
