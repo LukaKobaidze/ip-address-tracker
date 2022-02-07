@@ -7,6 +7,7 @@
   margin-top: auto;
   border-radius: 16px;
   background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 
   @media (min-width: 950px) {
     min-height: 150px;
@@ -89,11 +90,7 @@
       }
       &__text {
         font-weight: var(--font-weight-medium);
-        font-size: 30px;
-
-        @media (max-width: 1000px) {
-          font-size: 25px;
-        }
+        font-size: 25px;
 
         @media (max-width: 825px) {
           font-size: 22px;
